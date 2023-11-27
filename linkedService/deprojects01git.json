@@ -1,0 +1,12 @@
+{
+	"name": "deprojects01git",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://github.com/xmjuan/de-projects01/tree/main/data",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
