@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://github.com/xmjuan/de-projects01/tree/main/data",
+			"url": "https://github.com/xmjuan/de-projects01/blob/main/data",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
