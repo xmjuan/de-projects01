@@ -1,20 +1,17 @@
 {
-	"name": "iplcsv",
+	"name": "ds_listOfFiles",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "deprojects01git",
+			"referenceName": "datalake_raw",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"sourcefilename": {
-				"type": "string"
-			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "AzureBlobFSLocation",
+				"fileName": "Files.txt",
+				"fileSystem": "raw"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

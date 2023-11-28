@@ -5,6 +5,11 @@
 			"referenceName": "datalake_raw",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"sinkfilename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
