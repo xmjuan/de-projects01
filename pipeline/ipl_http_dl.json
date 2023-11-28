@@ -108,7 +108,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"sourcefilename": {
-											"value": "@replace(item().files, '.csv', '.json')",
+											"value": "@item().files",
 											"type": "Expression"
 										}
 									}
@@ -117,7 +117,13 @@
 							"outputs": [
 								{
 									"referenceName": "ipljson",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"sinkfilename": {
+											"value": "@replace(item().files, '.csv', '.json')",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
