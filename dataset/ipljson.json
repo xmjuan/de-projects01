@@ -2,7 +2,7 @@
 	"name": "ipljson",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "datalake_raw",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
