@@ -7,11 +7,11 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-de-projects"
 		},
-		"AzureDataLakeStorage1_accountKey": {
+		"datalake_raw_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+			"metadata": "Secure string for 'accountKey' of 'datalake_raw'"
 		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
+		"datalake_raw_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://deprojectsstoragetst.dfs.core.windows.net/"
 		},
@@ -46,11 +46,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureDataLakeStorage1_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					"datalake_raw_accountKey": {
+						"value": "[parameters('datalake_raw_accountKey')]"
 					},
-					"AzureDataLakeStorage1_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					"datalake_raw_properties_typeProperties_url": {
+						"value": "[parameters('datalake_raw_properties_typeProperties_url')]"
 					},
 					"deprojects01git_properties_typeProperties_url": {
 						"value": "[parameters('deprojects01git_properties_typeProperties_url')]"

@@ -5,10 +5,10 @@
 		"factoryName": {
 			"value": "adf-de-projects"
 		},
-		"AzureDataLakeStorage1_accountKey": {
+		"datalake_raw_accountKey": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
+		"datalake_raw_properties_typeProperties_url": {
 			"value": "https://deprojectsstoragetst.dfs.core.windows.net/"
 		},
 		"deprojects01git_properties_typeProperties_url": {

@@ -7,11 +7,11 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-de-projects"
 		},
-		"AzureDataLakeStorage1_accountKey": {
+		"datalake_raw_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+			"metadata": "Secure string for 'accountKey' of 'datalake_raw'"
 		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
+		"datalake_raw_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://deprojectsstoragetst.dfs.core.windows.net/"
 		},
@@ -122,7 +122,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "AzureDataLakeStorage1",
+					"referenceName": "datalake_raw",
 					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
@@ -136,21 +136,21 @@
 				"schema": {}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
+				"[concat(variables('factoryId'), '/linkedServices/datalake_raw')]"
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureDataLakeStorage1')]",
+			"name": "[concat(parameters('factoryName'), '/datalake_raw')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]",
+					"url": "[parameters('datalake_raw_properties_typeProperties_url')]",
 					"accountKey": {
 						"type": "SecureString",
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+						"value": "[parameters('datalake_raw_accountKey')]"
 					}
 				}
 			},
