@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://github.com/xmjuan/de-projects01/blob/main/data/ipl_2008.csv",
+			"url": "https://raw.githubusercontent.com/xmjuan/de-projects01/main/data/",
 			"enableServerCertificateValidation": false,
 			"authenticationType": "Anonymous"
 		}
