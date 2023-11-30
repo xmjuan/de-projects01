@@ -17,7 +17,7 @@
 		},
 		"deprojects01git_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://github.com/xmjuan/de-projects01/tree/main/data"
+			"defaultValue": "https://github.com/xmjuan/de-projects01/raw/main/data/"
 		},
 		"containerUri": {
 			"type": "string",

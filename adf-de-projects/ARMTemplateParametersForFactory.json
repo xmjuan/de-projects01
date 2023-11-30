@@ -12,7 +12,7 @@
 			"value": "https://deprojectsstoragetst.dfs.core.windows.net/"
 		},
 		"deprojects01git_properties_typeProperties_url": {
-			"value": "https://github.com/xmjuan/de-projects01/tree/main/data"
+			"value": "https://github.com/xmjuan/de-projects01/raw/main/data/"
 		}
 	}
 }
